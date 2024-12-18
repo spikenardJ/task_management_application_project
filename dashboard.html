@@ -1,0 +1,261 @@
+<!-- Mini-Project: Task Management Application Project -->
+<!-- Dashboard Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body class="bg-dark opacity-75 background-overlay" id="newTask">
+    <!-- New Task -->
+    <section class="container m-5 px-5 py-4 bg-light rounded" id="dashboard">
+        <h2 class="display-6 text-center mb-4">Tasks Dashboard</h2>
+        <p class="text-center lead">Tasks: All in One Place</p>
+        <section class="carousel carousel-dark">
+            <div class="container text-center">
+                <h2 id="tasks"><b>Tasks</b></h2>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/today.jpg" class="d-block w-100" alt="Today">
+                        <div class="carousel-caption d-md-block">
+                            <h3 class="display-6"><b>Tasks For Today</b></h3>
+                            <a href="#today" class="btn btn-outline-dark" role="button" aria-pressed="true">Go to Today</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/soon.jpg" class="d-block w-100" alt="Soon">
+                        <div class="carousel-caption d-md-block">
+                            <h3 class="display-6"><b>Tasks For Soon</b></h3>
+                            <a href="#soon" class="btn btn-outline-dark" role="button" aria-pressed="true">Go to Soon</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/anytime.jpg" class="d-block w-100" alt="Anytime">
+                        <div class="carousel-caption d-md-block">
+                            <h3 class="display-6"><b>Tasks For Anytime</b></h3>
+                            <a href="#anytime" class="btn btn-outline-dark" role="button" aria-pressed="true">Go to Anytime</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="today">
+            <div class="mx-5">
+                <h3 class="display-6 text-center my-5"><b>Tasks For Today</b></h3>
+                <div class="row row-cols-1 pb-5 g-4 text-center">
+                    <div class="col">
+                        <div class="card mx-auto" id="00001">
+                            <div class="card-header text-center"></div>
+                            <div class="card-body">
+                                <h5 class="card-title m-3"><span class="badge bg-danger mx-3">Work</span> Create Dashboard</h5>
+                                <p class="card-text">Due Date: 12/17/2024</p>
+                                <p class="card-text">Task ID: 00001</p>
+                                <p class="card-text">Description: Create an HTML dashboard for project website.</p>
+                                <div class="text-center">
+                                    <a href="task00001.html" class="btn btn-outline-secondary" role="button" aria-pressed="true">Go To Task</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto" id="00002">
+                            <div class="card-header text-center"></div>
+                            <div class="card-body">
+                                <h5 class="card-title m-3"><span class="badge bg-danger mx-3">Home</span> Pick Up Dinner</h5>
+                                <p class="card-text">Due Date: 12/17/2024</p>
+                                <p class="card-text">Task ID: 00002</p>
+                                <p class="card-text">Description: Stop at hometown restaurant and pick up preordered dinner.</p>
+                                <div class="text-center">
+                                    <a href="task00002.html" class="btn btn-outline-secondary" role="button" aria-pressed="true">Go To Task</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto" id="00003">
+                            <div class="card-header text-center"></div>
+                            <div class="card-body">
+                                <h5 class="card-title m-3"><span class="badge bg-danger mx-3">Personal</span> Deposit Check</h5>
+                                <p class="card-text">Due Date: 12/17/2024</p>
+                                <p class="card-text">Task ID: 00003</p>
+                                <p class="card-text">Description: Deposit check in bank on the way home.</p>
+                                <div class="text-center">
+                                    <a href="task00003.html" class="btn btn-outline-secondary" role="button" aria-pressed="true">Go To Task</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="soon">
+            <div class="mx-5">
+                <h3 class="display-6 text-center my-5"><b>Tasks For Soon</b></h3>
+                <div class="row row-cols-1 pb-5 g-4 text-center">
+                    <div class="col">
+                        <div class="card mx-auto" id="00004">
+                            <div class="card-header text-center"></div>
+                            <div class="card-body">
+                                <h5 class="card-title m-3"><span class="badge bg-warning mx-3">Home</span> Buy Presents</h5>
+                                <p class="card-text">Due Date: 12/24/2024</p>
+                                <p class="card-text">Task ID: 00004</p>
+                                <p class="card-text">Description: Make sure all Christmas presents are bought and wrapped.</p>
+                                <div class="text-center">
+                                    <a href="task00004.html" class="btn btn-outline-secondary" role="button" aria-pressed="true">Go To Task</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto" id="00005">
+                            <div class="card-header text-center"></div>
+                            <div class="card-body">
+                                <h5 class="card-title m-3"><span class="badge bg-warning mx-3">Home</span> Mow Grass</h5>
+                                <p class="card-text">Due Date: 12/21/2024</p>
+                                <p class="card-text">Task ID: 00005</p>
+                                <p class="card-text">Description: Mow the lawn.</p>
+                                <div class="text-center">
+                                    <a href="task00005.html" class="btn btn-outline-secondary" role="button" aria-pressed="true">Go To Task</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="anytime">
+            <div class="mx-5">
+                <h3 class="display-6 text-center my-5"><b>Tasks For Anytime</b></h3>
+                <div class="row row-cols-1 pb-5 g-4 text-center">
+                    <div class="col">
+                        <div class="card mx-auto" id="00006">
+                            <div class="card-header text-center"></div>
+                            <div class="card-body">
+                                <h5 class="card-title m-3"><span class="badge bg-success mx-3">Personal</span> Organize Closet</h5>
+                                <p class="card-text">Due Date: 12/31/2025</p>
+                                <p class="card-text">Task ID: 00006</p>
+                                <p class="card-text">Description: Organize closet and donate or throw away anything that is not wanted.</p>
+                                <div class="text-center">
+                                    <a href="task00006.html" class="btn btn-outline-secondary" role="button" aria-pressed="true">Go To Task</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mx-auto" id="00007">
+                            <div class="card-header text-center"></div>
+                            <div class="card-body">
+                                <h5 class="card-title m-3"><span class="badge bg-success mx-3">Work</span> Design New Logo</h5>
+                                <p class="card-text">Due Date: 12/31/2025</p>
+                                <p class="card-text">Task ID: 00007</p>
+                                <p class="card-text">Description: Design new logo for start-up company.</p>
+                                <div class="text-center">
+                                    <a href="task00007.html" class="btn btn-outline-secondary" role="button" aria-pressed="true">Go To Task</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <form class="form-group"></form>
+        <!-- FAQ -->
+            <div class="accordion accordion-flush">
+                <h5 class="lead"><b>Frequently Asked Questions</b></h5>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        How often should I check my Task Management Application?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><small>Your Task Management Application should be checked and updated daily for maximum results!</small></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Does the Task Management cost money? 
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><small>No. The Task Management Application is absolutely FREE! All we ask is to share it with your friends and family, and give a good rating on the app store.</small></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        If I am a student or stay at home mom, will this app work for me?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><small>Yes! The Task Management Application is designed to work for everyone!</small></div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        How can I contact someone about this app?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"><small>Reach us at <a href="#">www.example@task_management.com</a> for any questions that you may have.</small></div>
+                    </div>
+                </div>
+            </div>
+
+        <br><br>
+            <h5 class="lead"><b>App Satisfaction</b></h5>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="radio" id="love" name="app-satisfaction" value="app-satisfaction1">
+                <label class="form-check-label" for="love">Love it! 😎</label><br>
+                <input class="form-check-input" type="radio" id="okay" name="app-satisfaction" value="app-satisfaction2">
+                <label class="form-check-label" for="okay">It's Okay. 🙂</label><br>
+                <input class="form-check-input" type="radio" id="unsatisfied" name="app-satisfaction" value="app-satisfaction3">
+                <label class="form-check-label" for="unsatisfied">Unsatisfied. 😟</label><br>
+            </div>
+            <div class="text-left">
+                <button type="submit" class="btn btn-outline-dark btn-sm pr-5 mr-5">Submit</button>
+            </div>
+        </form>
+
+        <section>
+            <br><br>
+           <div class="text-center">
+                <a href="#tasks" class="btn btn-outline-dark btn-lg px-5 mx-5">Return To Top</a>
+                <a href="task_management_application1.html" class="btn btn-outline-dark btn-lg px-5 mx-5" role="button" aria-pressed="true">Return Home</a>
+            </div>
+        </section>
+    </section>
+    <footer class="bg-dark text-light text-center py-3 mt-4">
+        <div class="container">
+            <p class="text-light">&copy; 2024 Task Management. <small>All rights reserved.</small></p>
+            
+        </div>
+    </footer>
+    
+</body>
+</html>

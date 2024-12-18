@@ -1,0 +1,78 @@
+<!-- Mini-Project: Task Management Application Project -->
+<!-- Authentication Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management - Sign-In Authentication</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body class="bg-warning opacity-75 background-overlay" id="authentication">
+    <section class="container m-5 px-5 py-4 bg-light rounded" id="authentication">
+        <h2 class="display-6 text-center mb-4">Authentication</h2>
+        <p class="text-center lead">Sign-In Here</p>
+        <form action="/action_page.php"class="row g-3 needs-validation" novalidate>
+            <div class="form-floating mb-3 col-12 col-sm-12 col-md-12 col-lg-12">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email" aria-describedby="emailHelp" required>
+                <label for="email">Email Address <span class="text-danger">*</span></label>
+                <div id="email" class="text-center text-success"><small>Your email is kept private.</small></div>
+                <div class="valid-feedback">Looks Good!</div>
+                <div class="invalid-feedback">Please Enter A Valid Email</div>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" id="password" class="form-control" name="password" placeholder="Enter Your Password" aria-describedby="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                <label for="password">Password <span class="text-danger">*</span></label>
+                <p class="text-center"><small>(Password must consist of a minimum of <b>8 characters</b>, contain an <b>uppercase</b> letter, a <b>lowercase</b> letter, and a <b>number</b>.)</small></p>
+                <div class="valid-feedback">Looks Good!</div>
+                <div class="invalid-feedback">Please Enter Your Correct Password</div>
+            </div>
+            <div class="row mb-4 text-center">
+                <div class="text-center">
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                        <label class="form-check-label" for="form2Example31"> Remember me </label>
+                    </div>
+                </div>
+            
+                <div class="col">
+                    <a href="#!" >Forgot password?</a>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-outline-secondary btn-lg mb-5">Sign-In</button>
+            </div>
+            <div class="text-center">
+                <p class="mt-3">Not a member? &nbsp;&nbsp;<a href="registration.html">Register</a></p>
+            </div>
+            <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register"></div>
+        </form>
+    </section>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+    </script>
+
+</body>
+</html>
